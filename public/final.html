@@ -1,0 +1,48 @@
+﻿<!--Name:Lu Yu 
+Course: CSC 337
+Assignment：final assignment  
+Description: This app will allow user to build memos. When the page loads, it will show an input box for the user to write the title of the memo and a button to save the memo. The saved memo will be shown on the page. The user will be able to add more memos. New memo will be added to the page, displayed on top of old memos. When the mouse hovers over an old memo, two options will appear. One option is to delete this memo. The other option is to add more information and set the date for this memo. All memos and its information will be saved to a txt file.
+Files: final.html, final.css, final.js,final_service.js
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Memo</title>
+    <link rel="stylesheet" type="text/css" href="final.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+	<body>
+        <article id="main">
+
+            <h2>Memo</h2>
+            <section id="tinput" >
+                <input type="text" id="icontent" placeholder="Please enter the content you want to save">
+                    <button id="tsubmit">Save</button>
+            </section>
+           
+            <section id="tlist">
+                <ul id="list-content"></ul>
+            </section>
+            <aside id="task-detail">
+                <div class="detail-content">
+                    <div id="task-title" contenteditable></div>
+                    <textarea id="task-desc" placeholder="Add discription"></textarea>
+                    <input type="date" name="date" id="tdate">
+                    <div id="button-group">
+                        <button id="confirm">Confirm</button>
+                        <button id="cancel">Cancel</button>
+                    </div>
+                </div>
+            </aside>
+        </article>
+
+		<div id="delete-alert">
+			<div class="delete-content">
+				<p>Delete？</p>
+				<button id="delete-confirm">Confirm</button>
+				<button id="delete-cancel">Cancel</button>
+			</div>
+		</div>
+		<script src="final.js"></script>
+	</body>
+</html>
