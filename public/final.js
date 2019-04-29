@@ -108,7 +108,7 @@ Files: final.html, final.css, final.js,final_service.js
     };
 
     function showAllNotes() {
-        let url= "https://memoluyu.herokuapp.com";
+        let url= "https://memoluyu.herokuapp.com/?mode=Read";
         fetch(url)
             .then(checkStatus)
             .then(function(responseText){
